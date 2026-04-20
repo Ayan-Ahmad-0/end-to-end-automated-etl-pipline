@@ -27,15 +27,25 @@ Every stage is orchestrated by Apache Airflow as a DAG (`Taxi_data_pipeline`) th
 
 ## Project Structure
 ├── dags/
+
 │   └── newproject.py          # Airflow DAG definition
+
 ├── scripts/
+
 │   ├── data_generator.py      # Real-time trip data simulator
+
 │   ├── weather_enrichment.py  # OpenWeatherMap API integration
+
 │   ├── busy_location.py       # Logistic Regression classifier
+
 │   └── ml_demand_forecast.py  # Prophet forecasting model
+
 ├── docker-compose.yml         # Airflow + PostgreSQL services
+
 ├── requirements.txt
+
 └── README.md
+
 ## Quick Start
 ```bash
 git clone https://github.com/Ayan-Ahmad-0/end-to-end-automated-etl-pipline.git
